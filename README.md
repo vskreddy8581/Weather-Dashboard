@@ -6,7 +6,7 @@ A modern, responsive **Weather Dashboard** built with **HTML, CSS, and JavaScrip
 
 ## 🚀 Live Demo
 
-🔗 **Website:** https://your-vercel-link.vercel.app
+🔗 **Website:** https://weather-dashboard-woad-nu.vercel.app
 
 ---
 
@@ -48,10 +48,10 @@ A modern, responsive **Weather Dashboard** built with **HTML, CSS, and JavaScrip
 
 ```text
 Weather-Dashboard/
-│── index.html
+│── README.md
+│──index.html
 │── weather.css
 │── weather.js
-│── README.md
 ```
 
 ---
@@ -77,7 +77,7 @@ Provides:
 
 ---
 
-### 5-Day Forecast API
+### Forecast API
 
 ```text
 https://api.openweathermap.org/data/2.5/forecast
