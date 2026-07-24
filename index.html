@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeatherForecast</title>
+<link rel="stylesheet" href="weather.css"></head>
+<body>
+<header class="header">
+    <div class="logo">
+        <div class="logo-icon">🌤</div>
+        <div>
+            <h2>WeatherNow</h2>
+            <span>Professional Weather Dashboard</span>
+        </div>
+    </div>
+
+    <div class="today-date" id="currentDate"></div>
+</header>
+
+<section class="search-section">
+    <div class="search-wrapper">
+        <input class="sinput"  id="cityInput" type="text" placeholder="Search city (e.g. Rajkot,Guntur...)">
+        <button id="searchBtn">Search</button>
+    </div>
+</section>
+
+<main class="container">
+
+<section class="hero-card">
+    <div class="hero-left">
+        <div class="country-tag" id="countryName">IN</div>
+        <h1 id="cityName">Rajkot</h1>
+        <div class="weather-status" id="weatherCondition">Cloudy</div>
+
+        <div class="temperature-area">
+            <span class="temp" id="temperature">28</span>
+            <span class="degree">°C</span>
+        </div>
+
+        <div class="feels-like" id="feelsLike">Feels like 30°C</div>
+
+        <div class="high-low">
+            <div>
+                <label>High</label>
+                <h4 id="maxTemp">32°C</h4>
+            </div>
+
+            <div>
+                <label>Low</label>
+                <h4 id="minTemp">24°C</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-icon" id="weatherIcon">☁️</div>
+        <p>Current Weather</p>
+    </div>
+</section>
+
+<section class="dashboard-grid">
+<div class="card">
+<div class="card-header"><span>💧</span><h3>Humidity</h3></div>
+<h2 id="humidity">78%</h2>
+<p>Current Humidity</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>💨</span><h3>Wind Speed</h3></div>
+<h2 id="wind">12 km/h</h2>
+<p>Current Wind</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>🌧</span><h3>Rain Chance</h3></div>
+<h2 id="rain">20%</h2>
+<p id="rainstatus">Probability of Rain</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>🌅</span><h3>Sunrise</h3></div>
+<h2 id="sunrise">05:55 AM</h2>
+<p>Sunrise Time</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>🌇</span><h3>Sunset</h3></div>
+<h2 id="sunset">07:18 PM</h2>
+<p>Sunset Time</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>🧭</span><h3>Pressure</h3></div>
+<h2 id="pressure">1012 hPa</h2>
+<p>Atmospheric Pressure</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>👁</span><h3>Visibility</h3></div>
+<h2 id="visibility">10 km</h2>
+<p id="visibilitystatus">Clear Visibility</p>
+</div>
+
+<div class="card">
+<div class="card-header"><span>☁️</span><h3>Cloud Cover</h3></div>
+<h2 id="clouds">65%</h2>
+<p id="cloudStatus">Cloudiness</p>
+</div>
+</section>
+
+<section class="summary-card">
+<div class="summary-left">
+<h2>Today's Weather Summary</h2>
+<p id="weatherSummary">
+Weather information will appear here after searching for a city.
+</p>
+</div>
+
+<div class="summary-right">
+<div class="summary-icon">🌤</div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-bottom">
+© 2026 WeatherNow | Built using HTML, CSS & JavaScript
+</div>
+</footer>
+
+<script src="weather.js"></script>
+
+</body>
+</html>
