@@ -117,11 +117,6 @@ Provides:
 1. Create a free account at OpenWeather.
 2. Generate an API key.
 3. Replace your API key inside **weather.js**
-
-```javascript
-const apiKey = "a04f6e33094ae3c77e88fddb8b8202a9";
-```
-
 ---
 
 ## 📱 Responsive Design
