@@ -1,118 +1,148 @@
-🌦️ Weather Dashboard
+# 🌦️ Weather Dashboard
 
-A modern, responsive Weather Dashboard built using HTML, CSS, and JavaScript. It provides real-time weather information using the OpenWeather API, including temperature, humidity, wind speed, cloud cover, sunrise/sunset, visibility, rain probability, and a weather summary. The app also supports searching by city and pressing Enter to search.
+A modern, responsive **Weather Dashboard** built with **HTML, CSS, and JavaScript** that provides real-time weather information using the **OpenWeather API**. Search any city to view current weather conditions, temperature, humidity, wind speed, pressure, visibility, cloud cover, sunrise/sunset, rain probability, and a detailed weather summary.
 
-🚀 Live Demo
+---
 
-🔗 Live Website: https://your-vercel-link.vercel.app
+## 🚀 Live Demo
 
-📸 Preview
+🔗 **Website:** https://your-vercel-link.vercel.app
 
-Add a screenshot here
+---
 
-assets/weather-dashboard.png
-✨ Features
-🌍 Search weather by city name
-🌡️ Current temperature
-🤗 Feels like temperature
-📈 High & Low temperature
-💧 Humidity
-💨 Wind speed
-🌧️ Rain probability with rain status
-☁️ Cloud cover with cloud status
-👁️ Visibility with visibility status
-🌅 Sunrise & Sunset
-🧭 Atmospheric pressure
-📝 Automatic weather summary
-📅 Current date display
-⌨️ Press Enter to search
-📱 Fully responsive design
-🎨 Modern UI with dark theme
-🛠️ Technologies Used
-HTML5
-CSS3
-JavaScript (ES6)
-OpenWeather API
-Fetch API
-Responsive Design
-CSS Flexbox
-CSS Grid
-📂 Project Structure
+## ✨ Features
+
+- 🌍 Search weather by city name
+- 🌡️ Current temperature
+- 🤗 Feels Like temperature
+- 📈 Maximum & Minimum temperature
+- 💧 Humidity
+- 💨 Wind speed
+- 🌧️ Rain probability
+- ☁️ Cloud cover
+- 👁️ Visibility
+- 🌅 Sunrise & Sunset
+- 🧭 Atmospheric pressure
+- 📝 Dynamic weather summary
+- 📅 Current date display
+- ⌨️ Press **Enter** to search
+- 📱 Fully responsive design
+- 🎨 Modern dark UI
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- OpenWeather API
+- Fetch API
+- Responsive Design
+- CSS Flexbox
+- CSS Grid
+
+---
+
+## 📂 Project Structure
+
+```text
 Weather-Dashboard/
 │── index.html
 │── weather.css
 │── weather.js
 │── README.md
-🌐 APIs Used
-Current Weather API
+```
+
+---
+
+## 🌐 APIs Used
+
+### Current Weather API
+
+```text
 https://api.openweathermap.org/data/2.5/weather
+```
 
 Provides:
 
-Current temperature
-Humidity
-Wind speed
-Pressure
-Visibility
-Sunrise & Sunset
-Cloud cover
-Weather condition
-5-Day Forecast API
+- Current Temperature
+- Weather Condition
+- Humidity
+- Wind Speed
+- Pressure
+- Visibility
+- Sunrise & Sunset
+- Cloud Cover
+
+---
+
+### 5-Day Forecast API
+
+```text
 https://api.openweathermap.org/data/2.5/forecast
+```
 
 Provides:
 
-Rain probability
-Weather forecast
-Future weather conditions
-📷 Dashboard Includes
-🏙️ City Name
-🌍 Country
-🌡️ Temperature
-🌤️ Weather Condition
-🤗 Feels Like
-📈 High Temperature
-📉 Low Temperature
-💧 Humidity
-💨 Wind Speed
-🌧️ Rain Chance
-🌅 Sunrise
-🌇 Sunset
-🧭 Pressure
-👁️ Visibility
-☁️ Cloud Cover
-📝 Weather Summary
-⚙️ Installation
+- Rain Probability
+- Weather Forecast
+- Future Weather Data
 
-Clone the repository:
+---
 
-git clone https://github.com/your-username/weather-dashboard.git
+## 📋 Weather Information Displayed
 
-Open the project folder:
+- City
+- Country
+- Temperature
+- Weather Condition
+- Feels Like
+- High Temperature
+- Low Temperature
+- Humidity
+- Wind Speed
+- Rain Chance
+- Sunrise
+- Sunset
+- Pressure
+- Visibility
+- Cloud Cover
+- Weather Summary
 
-cd weather-dashboard
+---
 
-Open index.html in your browser.
+## 🔑 API Key Setup
 
-🔑 API Key Setup
-Create an account on OpenWeather.
-Generate a free API key.
-Replace the API key in weather.js.
-const apiKey = "YOUR_API_KEY";
-📱 Responsive Design
+1. Create a free account at OpenWeather.
+2. Generate an API key.
+3. Replace your API key inside **weather.js**
 
-Optimized for:
+```javascript
+const apiKey = "a04f6e33094ae3c77e88fddb8b8202a9";
+```
 
-📱 Mobile Devices
-The layout adapts using CSS Flexbox, Grid, and media queries for an improved experience on smaller screens.
+---
 
-💡 Future Improvements
-📍 Current location weather
-🕒 Hourly forecast
-📅 7-day forecast
-🌍 Search villages using Geocoding API
-🌙 Light/Dark mode
-⭐ Favorite cities
-🗺️ Weather map integration
-🌡️ Celsius/Fahrenheit toggle
-🌤️ Dynamic weather icons
+## 📱 Responsive Design
+
+Supports:
+
+- 💻 Desktop
+- 💻 Laptop
+- 📱 Mobile
+
+---
+
+## 🚀 Future Improvements
+
+- 📍 Current Location Weather
+- 🕒 Hourly Forecast
+- 📅 7-Day Forecast
+- 🌍 Village Search using Geocoding API
+- ⭐ Favorite Cities
+- 🌙 Dark / Light Mode
+- 🌡️ Celsius / Fahrenheit Toggle
+- 🗺️ Weather Maps
+
+---
