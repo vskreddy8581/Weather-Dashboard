@@ -303,10 +303,10 @@ body {
 }
 
 @media (max-width: 450px) {
-    /* Header & Logo */
+    /* Header Container */
     .header {
         flex-direction: column;
-        gap: 14px;
+        gap: 12px;
         padding: 16px;
         text-align: center;
     }
@@ -316,74 +316,55 @@ body {
         gap: 10px;
     }
 
-    .logo h2 {
-        font-size: 20px;
-    }
-
-    .logo-icon {
-        width: 44px;
-        height: 44px;
-        font-size: 22px;
-    }
-
-    .today-date {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-
-    /* Search Bar */
+    /* Search Section Fix */
     .search-section,
     .container {
-        padding: 0 14px 20px;
+        padding: 0 16px 24px;
     }
 
     .search-section {
-        margin: 20px auto;
+        margin: 16px auto;
     }
 
     .search-wrapper {
+        display: flex;
         gap: 8px;
+        width: 100%;
     }
 
     .search-wrapper input {
-        height: 44px;
-        padding: 0 14px;
-        font-size: 14px;
+        flex: 1;
+        min-width: 0; /* Prevents overflow */
+        height: 46px;
+        padding: 0 12px;
+        font-size: 13px;
+        border-radius: 12px;
     }
 
     .search-wrapper input::placeholder {
-        font-size: 12px;
+        font-size: 11px;
+        text-overflow: ellipsis;
     }
 
     .search-wrapper button {
-        width: 95px;
-        height: 44px;
+        width: 85px;
+        height: 46px;
         font-size: 14px;
+        border-radius: 12px;
         flex-shrink: 0;
     }
 
-    /* Hero Card */
+    /* Hero Card Alignment */
     .hero-card {
         flex-direction: column;
         text-align: center;
-        gap: 18px;
-        padding: 20px 14px;
-        border-radius: 18px;
-    }
-
-    .country-tag {
-        padding: 4px 10px;
-        font-size: 11px;
-        margin-bottom: 10px;
+        padding: 24px 16px;
+        gap: 16px;
+        border-radius: 20px;
     }
 
     .hero-left h1 {
-        font-size: 28px;
-    }
-
-    .weather-status {
-        font-size: 14px;
-        margin-bottom: 14px;
+        font-size: 32px;
     }
 
     .temperature-area {
@@ -391,56 +372,39 @@ body {
     }
 
     .temp {
-        font-size: 48px;
-    }
-
-    .degree {
-        font-size: 22px;
-    }
-
-    .feels-like {
-        font-size: 13px;
+        font-size: 60px;
     }
 
     .high-low {
         justify-content: center;
-        gap: 24px;
-        margin-top: 18px;
-    }
-
-    .high-low label {
-        font-size: 11px;
-    }
-
-    .high-low h4 {
-        font-size: 18px;
+        gap: 32px;
+        margin-top: 20px;
     }
 
     .hero-icon {
-        font-size: 64px;
-        margin-bottom: 6px;
+        font-size: 70px;
+        margin-bottom: 4px;
     }
 
-    .hero-right p {
-        font-size: 13px;
-    }
-
-    /* Weather Cards (Switching to 1 column prevents squishing) */
+    /* Dashboard Grid (2 Columns with Auto-Sizing) */
     .dashboard-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
-        margin-top: 24px;
+        margin-top: 20px;
     }
 
     .card {
-        padding: 16px;
+        padding: 16px 12px;
         min-height: auto;
         border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .card-header {
         gap: 8px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     .card-header span {
@@ -448,24 +412,29 @@ body {
     }
 
     .card-header h3 {
-        font-size: 15px;
+        font-size: 14px;
+        white-space: nowrap;
     }
 
+    /* Fluid font size prevents "km/h" or "AM/PM" from wrapping to a 2nd line */
     .card h2 {
-        font-size: 26px;
-        margin-bottom: 4px;
+        font-size: clamp(1.2rem, 5vw, 1.6rem);
+        line-height: 1.1;
+        margin-bottom: 6px;
+        word-break: normal;
+        white-space: nowrap;
     }
 
     .card p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
-    /* Summary & Footer */
+    /* Summary Card */
     .summary-card {
         flex-direction: column;
         text-align: center;
-        gap: 14px;
-        padding: 20px 14px;
+        gap: 16px;
+        padding: 20px 16px;
     }
 
     .summary-left h2 {
@@ -477,12 +446,7 @@ body {
     }
 
     .summary-icon {
-        font-size: 50px;
-    }
-
-    .footer-bottom {
-        padding: 14px;
-        font-size: 11px;
+        font-size: 54px;
     }
 }
 @media (max-width: 350px) {
