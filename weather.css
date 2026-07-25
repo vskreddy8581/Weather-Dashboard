@@ -301,9 +301,9 @@ body {
 .search-wrapper input::placeholder {
     color: #94a3b8;
 }
-
+/* Mobile Screens (450px and below) - 2 Cards Per Row */
 @media (max-width: 450px) {
-    /* Header Container */
+    /* Header & Logo */
     .header {
         flex-direction: column;
         gap: 12px;
@@ -316,10 +316,25 @@ body {
         gap: 10px;
     }
 
-    /* Search Section Fix */
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    .today-date {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* Search Bar */
     .search-section,
     .container {
-        padding: 0 16px 24px;
+        padding: 0 14px 20px;
     }
 
     .search-section {
@@ -334,8 +349,8 @@ body {
 
     .search-wrapper input {
         flex: 1;
-        min-width: 0; /* Prevents overflow */
-        height: 46px;
+        min-width: 0;
+        height: 44px;
         padding: 0 12px;
         font-size: 13px;
         border-radius: 12px;
@@ -343,174 +358,11 @@ body {
 
     .search-wrapper input::placeholder {
         font-size: 11px;
-        text-overflow: ellipsis;
     }
 
     .search-wrapper button {
         width: 85px;
-        height: 46px;
-        font-size: 14px;
-        border-radius: 12px;
-        flex-shrink: 0;
-    }
-
-    /* Hero Card Alignment */
-    .hero-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 24px 16px;
-        gap: 16px;
-        border-radius: 20px;
-    }
-
-    .hero-left h1 {
-        font-size: 32px;
-    }
-
-    .temperature-area {
-        justify-content: center;
-    }
-
-    .temp {
-        font-size: 60px;
-    }
-
-    .high-low {
-        justify-content: center;
-        gap: 32px;
-        margin-top: 20px;
-    }
-
-    .hero-icon {
-        font-size: 70px;
-        margin-bottom: 4px;
-    }
-
-    /* Dashboard Grid (2 Columns with Auto-Sizing) */
-    .dashboard-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-top: 20px;
-    }
-
-    .card {
-        padding: 16px 12px;
-        min-height: auto;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .card-header {
-        gap: 8px;
-        margin-bottom: 12px;
-    }
-
-    .card-header span {
-        font-size: 20px;
-    }
-
-    .card-header h3 {
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    /* Fluid font size prevents "km/h" or "AM/PM" from wrapping to a 2nd line */
-    .card h2 {
-        font-size: clamp(1.2rem, 5vw, 1.6rem);
-        line-height: 1.1;
-        margin-bottom: 6px;
-        word-break: normal;
-        white-space: nowrap;
-    }
-
-    .card p {
-        font-size: 11px;
-    }
-
-    /* Summary Card */
-    .summary-card {
-        flex-direction: column;
-        text-align: center;
-        gap: 16px;
-        padding: 20px 16px;
-    }
-
-    .summary-left h2 {
-        font-size: 20px;
-    }
-
-    .summary-left p {
-        font-size: 13px;
-    }
-
-    .summary-icon {
-        font-size: 54px;
-    }
-}
-@media (max-width: 350px) {
-    /* Header & Logo */
-    .header {
-        flex-direction: column;
-        gap: 10px;
-        padding: 12px 10px;
-        text-align: center;
-    }
-
-    .logo {
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .logo h2 {
-        font-size: 18px;
-    }
-
-    .logo-icon {
-        width: 38px;
-        height: 38px;
-        font-size: 18px;
-        border-radius: 12px;
-    }
-
-    .logo span {
-        font-size: 11px;
-    }
-
-    .today-date {
-        font-size: 11px;
-        padding: 4px 10px;
-    }
-
-    /* Search Bar */
-    .search-section,
-    .container {
-        padding: 0 10px 16px;
-    }
-
-    .search-section {
-        margin: 16px auto;
-    }
-
-    .search-wrapper {
-        gap: 6px;
-    }
-
-    .search-wrapper input {
-        height: 40px;
-        padding: 0 10px;
-        font-size: 13px;
-        border-radius: 12px;
-    }
-
-    .search-wrapper input::placeholder {
-        font-size: 11px;
-    }
-
-    .search-wrapper button {
-        width: 80px;
-        height: 40px;
+        height: 44px;
         font-size: 13px;
         border-radius: 12px;
         flex-shrink: 0;
@@ -520,24 +372,24 @@ body {
     .hero-card {
         flex-direction: column;
         text-align: center;
-        gap: 14px;
-        padding: 16px 10px;
-        border-radius: 16px;
+        gap: 16px;
+        padding: 20px 14px;
+        border-radius: 18px;
     }
 
     .country-tag {
-        padding: 3px 8px;
-        font-size: 10px;
+        padding: 4px 10px;
+        font-size: 11px;
         margin-bottom: 8px;
     }
 
     .hero-left h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .weather-status {
-        font-size: 13px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 12px;
     }
 
     .temperature-area {
@@ -545,56 +397,60 @@ body {
     }
 
     .temp {
-        font-size: 42px;
+        font-size: 48px;
     }
 
     .degree {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .feels-like {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .high-low {
         justify-content: center;
-        gap: 16px;
-        margin-top: 14px;
+        gap: 24px;
+        margin-top: 16px;
     }
 
     .high-low label {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .high-low h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero-icon {
-        font-size: 52px;
+        font-size: 60px;
         margin-bottom: 4px;
     }
 
     .hero-right p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    /* Weather Cards */
+    /* Dashboard Grid (2 Cards Per Row) */
     .dashboard-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        margin-top: 18px;
+        margin-top: 20px;
     }
 
     .card {
-        padding: 12px 14px;
+        padding: 14px 10px;
         min-height: auto;
         border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .card-header {
         gap: 6px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .card-header span {
@@ -602,41 +458,462 @@ body {
     }
 
     .card-header h3 {
-        font-size: 14px;
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    /* Prevents numbers/units from wrapping into 2 lines */
     .card h2 {
-        font-size: 22px;
-        margin-bottom: 2px;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+        white-space: nowrap;
     }
 
     .card p {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Summary Card & Footer */
+    .summary-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+        padding: 20px 14px;
+        border-radius: 18px;
+    }
+
+    .summary-left h2 {
+        font-size: 20px;
+    }
+
+    .summary-left p {
+        font-size: 13px;
+    }
+
+    .summary-icon {
+        font-size: 50px;
+    }
+
+    .footer-bottom {
+        padding: 14px;
         font-size: 11px;
+    }
+}
+/* Mobile Screens (450px and below) - 2 Cards Per Row */
+@media (max-width: 450px) {
+    /* Header & Logo */
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    .today-date {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* Search Bar */
+    .search-section,
+    .container {
+        padding: 0 14px 20px;
+    }
+
+    .search-section {
+        margin: 16px auto;
+    }
+
+    .search-wrapper {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .search-wrapper input {
+        flex: 1;
+        min-width: 0;
+        height: 44px;
+        padding: 0 12px;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+
+    .search-wrapper input::placeholder {
+        font-size: 11px;
+    }
+
+    .search-wrapper button {
+        width: 85px;
+        height: 44px;
+        font-size: 13px;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    /* Hero Card */
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 20px 14px;
+        border-radius: 18px;
+    }
+
+    .country-tag {
+        padding: 4px 10px;
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .hero-left h1 {
+        font-size: 28px;
+    }
+
+    .weather-status {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .temperature-area {
+        justify-content: center;
+    }
+
+    .temp {
+        font-size: 48px;
+    }
+
+    .degree {
+        font-size: 22px;
+    }
+
+    .feels-like {
+        font-size: 13px;
+    }
+
+    .high-low {
+        justify-content: center;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    .high-low label {
+        font-size: 11px;
+    }
+
+    .high-low h4 {
+        font-size: 18px;
+    }
+
+    .hero-icon {
+        font-size: 60px;
+        margin-bottom: 4px;
+    }
+
+    .hero-right p {
+        font-size: 13px;
+    }
+
+    /* Dashboard Grid (2 Cards Per Row) */
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .card {
+        padding: 14px 10px;
+        min-height: auto;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-header {
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+
+    .card-header span {
+        font-size: 18px;
+    }
+
+    .card-header h3 {
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Prevents numbers/units from wrapping into 2 lines */
+    .card h2 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+        white-space: nowrap;
+    }
+
+    .card p {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Summary Card & Footer */
+    .summary-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+        padding: 20px 14px;
+        border-radius: 18px;
+    }
+
+    .summary-left h2 {
+        font-size: 20px;
+    }
+
+    .summary-left p {
+        font-size: 13px;
+    }
+
+    .summary-icon {
+        font-size: 50px;
+    }
+
+    .footer-bottom {
+        padding: 14px;
+        font-size: 11px;
+    }
+}
+/* Ultra-small screens (300px and below) - 2 Cards Per Row */
+@media (max-width: 300px) {
+    /* Header & Logo */
+    .header {
+        padding: 10px 8px;
+        gap: 8px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .logo span {
+        font-size: 10px;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .today-date {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    /* Search Bar */
+    .search-section,
+    .container {
+        padding: 0 8px 16px;
+    }
+
+    .search-section {
+        margin: 12px auto;
+    }
+
+    .search-wrapper {
+        gap: 4px;
+        display: flex;
+    }
+
+    .search-wrapper input {
+        flex: 1;
+        min-width: 0;
+        height: 36px;
+        padding: 0 8px;
+        font-size: 11px;
+        border-radius: 8px;
+    }
+
+    .search-wrapper input::placeholder {
+        font-size: 9px;
+    }
+
+    .search-wrapper button {
+        width: 60px;
+        height: 36px;
+        font-size: 11px;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    /* Hero Card */
+    .hero-card {
+        padding: 12px 8px;
+        gap: 10px;
+        border-radius: 12px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .country-tag {
+        padding: 2px 6px;
+        font-size: 9px;
+        margin-bottom: 6px;
+    }
+
+    .hero-left h1 {
+        font-size: 20px;
+    }
+
+    .weather-status {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .temperature-area {
+        justify-content: center;
+    }
+
+    .temp {
+        font-size: 34px;
+    }
+
+    .degree {
+        font-size: 14px;
+    }
+
+    .feels-like {
+        font-size: 10px;
+    }
+
+    .high-low {
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .high-low label {
+        font-size: 9px;
+    }
+
+    .high-low h4 {
+        font-size: 13px;
+    }
+
+    .hero-icon {
+        font-size: 38px;
+        margin-bottom: 2px;
+    }
+
+    .hero-right p {
+        font-size: 10px;
+    }
+
+    /* Dashboard Grid (2 Cards Per Row) */
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        margin-top: 12px;
+    }
+
+    .card {
+        padding: 8px 6px;
+        min-height: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-header {
+        gap: 4px;
+        margin-bottom: 4px;
+    }
+
+    .card-header span {
+        font-size: 14px;
+    }
+
+    .card-header h3 {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Scales down large values so numbers fit side-by-side */
+    .card h2 {
+        font-size: 14px;
+        line-height: 1.1;
+        margin-bottom: 2px;
+        white-space: nowrap;
+    }
+
+    .card p {
+        font-size: 9px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     /* Summary & Footer */
     .summary-card {
         flex-direction: column;
         text-align: center;
-        gap: 12px;
-        padding: 16px 10px;
-        border-radius: 16px;
+        padding: 12px 8px;
+        gap: 8px;
+        border-radius: 12px;
     }
 
     .summary-left h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .summary-left p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .summary-icon {
-        font-size: 44px;
+        font-size: 36px;
     }
 
     .footer-bottom {
-        padding: 12px;
+        padding: 10px;
         font-size: 10px;
     }
 }
