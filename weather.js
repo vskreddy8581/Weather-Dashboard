@@ -1,3 +1,16 @@
+import { Analytics } from '@vercel/analytics/next';
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
+
 const date = document.querySelector(".today-date");
 const today = new Date();
 date.textContent = today.toLocaleDateString("en-US", {
